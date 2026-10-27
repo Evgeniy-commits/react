@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -35,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+fieldset {
+  margin: 16px auto;      /* убирает стандартные боковые отступы, даёт воздух между постами */
+  max-width: 800px;       /* рамка не на всю ширину окна */
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+fieldset legend {
+  padding: 0 8px;         /* отступ, чтобы заголовок не прилипал к рамке */
 }
